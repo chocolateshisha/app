@@ -9,37 +9,37 @@ This is a **free Progressive Web App** that wraps your Menurite menu so customer
 - Works on Android & iPhone
 - Completely free (no App Store / Play Store fees)
 - No Menurite branding on the app shell
+- Strong SEO + structured data for Google and AI search engines
 
 ---
 
 ## Files included
-- `index.html` – Main app with splash screen
+- `index.html` – Main app with splash screen + SEO
 - `manifest.json` – App name, icons, theme
 - `sw.js` – Service worker
-- `icon-192.png` & `icon-512.png` – Your logo (Home Screen icons)
+- `icon-192.png` & `icon-512.png` – Optimized square logo icons
 - `favicon.ico` – Browser tab icon
+- `robots.txt` + `sitemap.xml` – For search engines
 - `README.md` – This file
 
 ---
 
-## How to upload to GitHub Pages
+## How to update on GitHub Pages (your current setup)
 
-1. Create a free GitHub account → github.com
-2. Click **+** → **New repository**
-3. Name it e.g. `choco-shisha-app` → make it **Public** → Create
-4. Click **uploading an existing file**
-5. Upload **all** these files:
+1. Go to: https://github.com/chocolateshisha/app
+2. Delete the old broken icons if they exist in the root or Images folder (the ones causing 404).
+3. Upload / replace these files in the **root** of the repository:
    - index.html
    - manifest.json
    - sw.js
    - icon-192.png
    - icon-512.png
    - favicon.ico
-6. Click **Commit changes**
-7. Go to **Settings** → **Pages**
-8. Source: **main** branch → **/ (root)** → Save
-9. Wait 1 minute → your live link appears:
-   `https://YOUR-USERNAME.github.io/choco-shisha-app/`
+   - robots.txt
+   - sitemap.xml
+4. Commit the changes.
+5. Wait 1–2 minutes for GitHub Pages to update.
+6. Test: https://app.puffwithchocolate.com/
 
 ---
 
@@ -56,4 +56,5 @@ The app will appear with your logo and open full-screen.
 ---
 
 Built for Chocolate Shisha Store NG 🍫💨  
-13 Odewale street Alausa, Ikeja, Lagos
+13 Odewale Street, Alausa, Ikeja, Lagos  
+Phone: +234 916 804 4419
