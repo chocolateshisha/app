@@ -1,5 +1,5 @@
-// Simple service worker for offline shell (iframe still needs network)
-const CACHE_NAME = 'choco-shisha-v2';
+// Chocolate Shisha Store NG – Service Worker
+const CACHE_NAME = 'choco-shisha-v3';
 const ASSETS = [
   './',
   './index.html',
@@ -26,9 +26,9 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // Only cache our own assets; let the menu iframe go to network
+  // Never cache the Menurite menu – always network
   if (event.request.url.includes('menurite.app')) {
-    return; // network only
+    return;
   }
   event.respondWith(
     caches.match(event.request).then((cached) => cached || fetch(event.request))
