@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.puffwithchocolate.com/sitemap.xml
+Sitemap: https://app.puffwithchocolate.com/sitemap.xml
